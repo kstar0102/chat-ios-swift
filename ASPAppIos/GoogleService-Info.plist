@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>964522968980-qd6begp56l74la6hhq2k4c56nlmj098e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.964522968980-qd6begp56l74la6hhq2k4c56nlmj098e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBC2cj3o-hj6WT2B7m0ChVLL59Z2wQZPME</string>
+	<key>GCM_SENDER_ID</key>
+	<string>964522968980</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bottomup.ios</string>
+	<key>PROJECT_ID</key>
+	<string>bottom-up2020</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bottom-up2020.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:964522968980:ios:a111b5f27a5f0b41973181</string>
+	<key>DATABASE_URL</key>
+	<string>https://bottom-up2020.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,8 @@
+framework module COREASP {
+    umbrella header "CoreAsp.h"
+
+    export *
+    module * { export * }
+    
+    link framework "UserNotifications"
+}

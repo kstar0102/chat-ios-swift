@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermsViewController" customModule="BottomUp" customModuleProvider="target">
+            <connections>
+                <outlet property="agreeBtn" destination="ber-Lr-fZn" id="LTt-1j-h9J"/>
+                <outlet property="checkBottom" destination="KfI-e5-bW4" id="yEH-g6-hIE"/>
+                <outlet property="checkBox" destination="3aB-fU-Lu8" id="FO8-KE-Bru"/>
+                <outlet property="menuView" destination="hKN-bo-Q15" id="Sqe-iJ-7bh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbB-7l-hvq">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="利用規約" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pd-UV-EXD">
+                            <rect key="frame" x="167" y="15" width="80" height="20"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKN-bo-Q15">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_menu" translatesAutoresizingMaskIntoConstraints="NO" id="nDx-Km-9SE">
+                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Vbf-kZ-kWK"/>
+                                        <constraint firstAttribute="height" constant="30" id="wVx-R3-oxv"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9Z-dV-7VP">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal">
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="regular"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="menuBtnClicked:" destination="-1" eventType="touchUpInside" id="Vte-jQ-5J1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="CQl-O7-amH"/>
+                                <constraint firstItem="nDx-Km-9SE" firstAttribute="centerX" secondItem="hKN-bo-Q15" secondAttribute="centerX" id="FcG-WL-hkw"/>
+                                <constraint firstAttribute="bottom" secondItem="P9Z-dV-7VP" secondAttribute="bottom" id="TJ0-U8-r70"/>
+                                <constraint firstItem="P9Z-dV-7VP" firstAttribute="top" secondItem="hKN-bo-Q15" secondAttribute="top" id="dKC-zA-a7c"/>
+                                <constraint firstItem="nDx-Km-9SE" firstAttribute="centerY" secondItem="hKN-bo-Q15" secondAttribute="centerY" id="dY5-tu-m0T"/>
+                                <constraint firstAttribute="trailing" secondItem="P9Z-dV-7VP" secondAttribute="trailing" id="gxU-iA-WgO"/>
+                                <constraint firstAttribute="height" constant="50" id="iJ0-PR-6ub"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="rv3-tT-0Ue"/>
+                                <constraint firstItem="P9Z-dV-7VP" firstAttribute="leading" secondItem="hKN-bo-Q15" secondAttribute="leading" id="x7O-Ab-Ozc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.17254901959999999" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="5Pd-UV-EXD" firstAttribute="centerY" secondItem="bbB-7l-hvq" secondAttribute="centerY" id="3op-08-6bG"/>
+                        <constraint firstAttribute="bottom" secondItem="hKN-bo-Q15" secondAttribute="bottom" id="JLg-VN-Wlg"/>
+                        <constraint firstItem="hKN-bo-Q15" firstAttribute="top" secondItem="bbB-7l-hvq" secondAttribute="top" id="QDq-Py-K9R"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Xnd-wM-h9g"/>
+                        <constraint firstItem="hKN-bo-Q15" firstAttribute="leading" secondItem="bbB-7l-hvq" secondAttribute="leading" id="YYP-qT-4sG"/>
+                        <constraint firstAttribute="height" constant="50" id="gAq-jx-rGP"/>
+                        <constraint firstItem="5Pd-UV-EXD" firstAttribute="centerX" secondItem="bbB-7l-hvq" secondAttribute="centerX" id="zFH-YD-7vu"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gg4-SW-sga">
+                    <rect key="frame" x="20" y="114" width="374" height="650.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <attributedString key="attributedText">
+                        <fragment content="BottomUpアプリ利用規約">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="18" name="HiraginoSans-W6"/>
+                                <font key="NSOriginalFont" size="14" name="HiraMinProN-W6"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+CiAKA
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="この規約（以下「本規約」といいます。）は、株式会社フィット（以下「当社」といいます。）が提供するアプリ（以下「本サービス」といいます。）の利用に関する条件を、本サービスを利用するお客様（以下「お客様」といいます。）と当社との間で定めるものです。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+ 
+
+1.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="定義">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+
+1.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="「アプリ」とは、本サービスのために当社が提供するスマートフォンやタブレット端末用">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" OS">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="向けのアプリケーションソフトウェア「">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="BottomUp">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="アプリ」をいいます。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+1.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="「コンテンツ」とは、文章、音声、音楽、画像、動画、ソフトウェア、プログラム、コードその他の情報のことをいいます。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+1.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="「個別利用規約」とは、本サービスに関して、本規約とは別に「規約」、「ガイドライン」、「ポリシー」などの名称で当社が配布または掲示している文書（あれば）のことをいいます。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+2.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="規約への同意">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+
+2.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本規約の定めに従って本サービスを利用しなければなりません。お客様は、本規約に有効かつ取消不能な同意をしないかぎり本サービスを利用できません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+2.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様が未成年者である場合は、親権者など法定代理人の同意を得たうえで本サービスを利用してください。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+2.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本サービスを実際に利用することによって本規約に有効かつ取消不能な同意をしたものとみなされます。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+2.4. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスにおいて個別利用規約がある場合、お客様は、本規約のほか個別利用規約の定めにも従って本サービスを利用しなければなりません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+ 
+
+
+3.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="規約の変更">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+IAoKCg
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">当社は、当社が必要と判断する場合、あらかじめお客様に通知することなく、いつでも本規約および個別利用規約を変更できるものとします。変更後の本規約および個別利用規約は、本サービス内の適宜の場所に掲示された時点からその効力を生じるものとし、お客様は本規約および個別利用規約の変更後も本サービスを使い続けることにより、変更後の本規約および適用のある個別利用規約に対する有効かつ取消不能な同意をしたものとみなされます。かかる変更の内容をお客様に個別に通知することはいたしかねますので、本サービスをご利用の際には、随時、最新の本規約および適用のある個別利用規約をご参照ください。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+4.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="アカウント">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+4.1.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本サービスの利用に際してお客様ご自身に関する情報を登録する場合、真実、正確かつ完全な情報を提供しなければならず、常に最新の情報となるよう修正しなければなりません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+4.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">お客様は、本サービスの利用に際してメールアドレスまたはパスワードを登録する場合、これを不正に利用されないようご自身の責任で厳重に管理しなければなりません。当社は、お客様のアカウント（以下、「アカウント」といいます。）で行なわれた一切の行為を、お客様ご本人の行為とみなすことができます。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+4.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社は、お客様が本規約に違反しまたは違反するおそれがあると認めた場合、当社が必要かつ適切と判断した場合、あらかじめお客様に通知することなく、アカウントまたはその利用履歴を停止または削除することができます。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+4.4.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">アカウント等が削除されると、本サービスの利用履歴は消滅します。お客様が誤ってアカウント等を削除した場合であっても復旧はできませんのでご注意ください。お客様は、アカウント等またはその利用履歴の停止または削除によってお客様が被った損失および不便について、当社が如何なる責任も負わないことに同意するものとします。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+5.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="プライバシー">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+5.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社は、お客様のプライバシーを尊重しています。当社は、お客様から収集した情報を安全に管理するため、セキュリティに最大限の注意を払っています。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+5.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社は、統計データの作成およびお客様へのより良いサービスの提供を目的として、">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスにおけるお客様の個人情報を取得、管理いたします。個人情報の取り扱いは当社が定めるプライバシーポリシーに従います。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+ 
+
+6.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="権利帰属">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+IAoKIAo
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスの知的財産権その他の権利は、当社に帰属します。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+7.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="サービスの提供">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content"> 
+
+ 
+7.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">当社は、お客様に対し、本規約および本サービス内に掲載される利用条件に従って本サービスを利用する権利を非独占的に許諾します。本サービスの画面上で「購入」、「販売」などと表示される場合であっても、コンテンツに関する知的財産権または所有権はお客様に移転せず、お客様には、上記の利用権のみが付与されます。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+7.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本サービスの利用権を第三者に譲渡したり相続させたりすることはできません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+7.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本サービスを利用するにあたり、必要なパーソナルコンピュータ、携帯電話機、通信機器、オペレーションシステム、通信手段および電力などを、お客様の費用と責任で用意しなければなりません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+7.4. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社は、本サービスの全部または一部を、年齢、ご本人確認の有無、登録情報の有無、利用地域、アカウントの利用状況、その他、当社が必要と判断する条件を満たしたお客様に限定して提供することができるものとします。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+7.5. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">当社は、当社が必要と判断する場合、あらかじめお客様に通知することなく、いつでも、本サービスの全部または一部を変更し、一時停止し、または終了させることができるものとします。本サービスの変更、一時停止または終了によりお客様が何らかの損害や損失を蒙ることがあっても、当社はそれを賠償または補償する責任を負わないものとします。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+8.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="広告表示">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社は、本サービスに当社または第三者の広告を掲載することができるものとします。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+9.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="提携パートナーのサービス">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">本サービスは、当社と提携する他の事業者が提供するサービスまたはコンテンツを含む場合があります。かかるサービスまたはコンテンツに対する責任は、これを提供する事業者が負います。また、かかるサービスまたはコンテンツには、これを提供する事業者が定める利用規約その他の条件が適用されることがあります。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+10.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="コンテンツ">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+10.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本コンテンツについて定められた利用料、利用期間、決済方法がある場合の利用条件に従うものとします。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+10.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本コンテンツを、本サービスが予定している利用態様を超えて利用（複製、送信、転載、改変などの行為を含みます。）してはなりません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+ 
+ 
+
+11.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="禁止事項">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、本サービスの利用に際して、以下に記載することを行なってはなりません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="法令、裁判所の判決、決定もしくは命令、または法令上拘束力のある行政措置に違反する行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="公の秩序または善良の風俗を害するおそれのある行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社または第三者の著作権、商標権、特許権等の知的財産権、名誉権、プライバシー権、その他法令上または契約上の権利を侵害する行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.4. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社または第三者になりすます行為または虚偽の情報や真否の確認が困難な情報を流布させる行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.5. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="同一または類似のコメントを多数のコメント投稿欄に送信する行為（当社の認めたものを除きます。）、その他当社がスパムと判断する行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.6. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社が定める方法以外の方法で、本コンテンツの利用権を、現金、財物その他の経済上の利益と交換する行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.7. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">営業、宣伝、広告、勧誘、その他営利を目的とする行為（当社の認めたものを除きます。）、性行為やわいせつな行為を目的とする行為、面識のない第三者との出会いや交際を目的とする行為、他のお客様に対する嫌がらせや誹謗中傷を目的とする行為、その他本サービスが予定している利用目的と異なる目的で本サービスを利用する行為。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.8. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="反社会的勢力に対する利益供与その他の協力行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.9. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="宗教活動または宗教団体への勧誘行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.10. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="他人の個人情報、登録情報、利用履歴情報などを、不正に収集、開示または提供する行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.11. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスのサーバやネットワークシステムに支障を与える行為、">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="BOT">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">、チートツール、その他の技術的手段を利用してサービスを不正に操作する行為、本サービスの不具合を意図的に利用する行為、ルーチングやジェイルブレイク等改変を行った通信端末にて本サービスにアクセスする行為、同様の質問を必要以上に繰り返す等、当社に対し不当な問い合わせまたは要求をする行為、その他当社による本サービスの運営または他のお客様による本サービスの利用を妨害し、これらに支障を与える行為。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.12. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="上記">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="11.1">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="から">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="11.12">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="のいずれかに該当する行為を援助または助長する行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+11.13. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="その他、当社が不適当と判断した行為。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+12.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様の責任">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+
+12.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="お客様は、お客様ご自身の責任において本サービスを利用するものとし、本サービスにおいて行った一切の行為およびその結果について一切の責任を負うものとします。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+12.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">当社は、お客様が本規約もしくは個別利用規約に違反して本サービスを利用していると認めた場合、または当社が必要かつ適切と判断した場合、事前にお客様に通知することなく、以下の措置を講じることができます。ただし、当社は、かかる違反を防止または是正する義務を負いません。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+12.2.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本コンテンツの利用権の停止または取消し">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+12.2.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="アカウントまたはその利用履歴の停止または削除">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+12.2.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスの全部または一部の利用停止">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+12.2.4. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="その他当社が必要かつ適切と判断する措置">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+12.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">お客様は、本サービスを利用したことに起因して（当社がかかる利用を原因とするクレームを第三者より受けた場合を含みます。）、当社が直接的もしくは間接的に何らかの損害（弁護士費用の負担を含みます。）を被った場合、当社の請求にしたがって直ちにこれを補償しなければなりません。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+13.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社の免責">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+
+13.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">当社は、本サービス（本コンテンツを含みます。）に事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます。）がないことを明示的にも黙示的にも保証しておりません。当社は、お客様に対して、かかる瑕疵を除去して本サービスを提供する義務を負いません。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+13.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社は、本サービスに起因してお客様に生じたあらゆる損害について一切の責任を負いません。ただし、本サービスに関する当社とお客様との間の契約（本規約を含みます。）が消費者契約法に定める消費者契約となる場合、この免責規定は適用されません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+13.3. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="上記">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="13.2.">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">ただし書に定める場合であっても、当社は、当社の過失（重過失を除きます。）による債務不履行または不法行為によりお客様に生じた損害のうち特別な事情から生じた損害（当社またはお客様が損害発生につき予見し、または予見し得た場合を含みます。）について一切の責任を負いません。また、当社の過失（重過失を除きます。）による債務不履行または不法行為によりお客様に生じた損害の賠償は、お客様から当該損害が発生した月に受領した利用料の額を上限とします。</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+13.4. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="当社は、本サービスに起因してお客様とその他のお客様または第三者との間に生じたトラブル、紛争等について関与せず、一切の責任を負いません。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+14.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="連絡方法">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+14.1. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスに関する当社からお客様への連絡は、当社が運営するウェブサイト内の適宜の場所への掲示その他、当社が適当と判断する方法により行ないます。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+14.2. </string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本サービスに関するお客様から当社への連絡は、当社が運営するウェブサイト内の適宜の場所に設置するお問い合わせフォームの送信または当社が指定する方法により行っていただきます。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+
+ 
+
+15.</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="準拠法、裁判管轄">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+CgogCgo
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="本規約は日本語を正文とし、その準拠法は日本法とします。本サービスに起因または関連してお客様と当社との間に生じた紛争については東京地方裁判所または東京簡易裁判所を第一審の専属的合意管轄裁判所とします。">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="以上">
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="14" name=".HiraKakuInterface-W3"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-fU-Lu8" customClass="VKCheckbox" customModule="BottomUp" customModuleProvider="target">
+                    <rect key="frame" x="50" y="787" width="25" height="25"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="fa1-hh-W87"/>
+                        <constraint firstAttribute="height" constant="25" id="z7B-wd-wMW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ber-Lr-fZn">
+                    <rect key="frame" x="85" y="784.5" width="230" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="Or4-9q-I8N"/>
+                        <constraint firstAttribute="width" constant="230" id="lGH-ke-iPF"/>
+                        <constraint firstAttribute="height" constant="30" id="p0a-lH-h5G"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="qVY-NH-UdT"/>
+                    </constraints>
+                    <state key="normal" title="このアプリの利用規約に同意する">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nextBtnClicked:" destination="-1" eventType="touchUpInside" id="sna-jL-k91"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gg4-SW-sga" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="0B4-r5-0QZ"/>
+                <constraint firstItem="ber-Lr-fZn" firstAttribute="leading" secondItem="3aB-fU-Lu8" secondAttribute="trailing" constant="10" id="0Pm-vo-d7h"/>
+                <constraint firstItem="3aB-fU-Lu8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="27f-Gb-PmR"/>
+                <constraint firstItem="ber-Lr-fZn" firstAttribute="centerY" secondItem="3aB-fU-Lu8" secondAttribute="centerY" id="71C-e5-4jB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3aB-fU-Lu8" secondAttribute="bottom" constant="50" id="KfI-e5-bW4"/>
+                <constraint firstItem="gg4-SW-sga" firstAttribute="top" secondItem="bbB-7l-hvq" secondAttribute="bottom" constant="20" id="OfY-54-chf"/>
+                <constraint firstItem="ber-Lr-fZn" firstAttribute="top" secondItem="gg4-SW-sga" secondAttribute="bottom" constant="20" id="aBG-kg-lle"/>
+                <constraint firstItem="bbB-7l-hvq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c7G-2e-851"/>
+                <constraint firstItem="bbB-7l-hvq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dH4-Ar-P5s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gg4-SW-sga" secondAttribute="trailing" constant="20" id="kqJ-JW-VSM"/>
+                <constraint firstItem="bbB-7l-hvq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pDq-6S-CRg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_menu" width="50" height="50"/>
+    </resources>
+</document>
